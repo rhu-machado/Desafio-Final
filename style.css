@@ -3,3 +3,65 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header{
+    border:solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1920px;
+    width:100%;
+    margin: auto;
+    height: 15vh;
+    color: #9767A9;
+}
+
+.cachos{
+    border:solid;
+    width:6vw;
+    display: flex;
+    align-items: center;
+}
+
+.cachos img{
+    width:12vh;
+}
+
+.navTop ul{
+    border:solid;
+    display: flex;
+    justify-content: space-between;
+    width: 46vw;
+    list-style: none;
+    font-size: 1.2vw;
+}
+
+.redes{
+    border: solid;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:18vw;
+    height:8vh;
+}
+
+.redes img{
+    width: 2vw;
+}
+
+input{
+    width: 10vw;
+    height: 3.8vh;
+    border:solid #9767A9 3px;
+    border-radius: 20px;
+    padding: 6px 0 0 35px;
+}
+
+input::placeholder{
+    font-size: 1.2vw;
+    color: #9767A9;
+    padding-left: -10px;
+    background-image: url(./imagens/Layer_3.svg);
+    background-repeat: no-repeat;
+    background-size: 1.5vw;
+}

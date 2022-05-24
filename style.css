@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&family=Playfair+Display:wght@900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,39 +7,37 @@
 }
 
 header{
-    border:solid;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     max-width: 1920px;
     width:100%;
     margin: auto;
-    height: 15vh;
+    height: 12vh;
     color: #9767A9;
 }
 
 .cachos{
-    border:solid;
     width:6vw;
     display: flex;
     align-items: center;
 }
 
 .cachos img{
-    width:12vh;
+    width:11vh;
 }
 
 .navTop ul{
-    border:solid;
     display: flex;
     justify-content: space-between;
     width: 46vw;
     list-style: none;
     font-size: 1.2vw;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .redes{
-    border: solid;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -54,14 +54,45 @@ input{
     height: 3.8vh;
     border:solid #9767A9 3px;
     border-radius: 20px;
-    padding: 6px 0 0 35px;
+    padding: 0px 0 0 10px;
 }
 
 input::placeholder{
-    font-size: 1.2vw;
+    font-size: 1vw;
     color: #9767A9;
-    padding-left: -10px;
     background-image: url(./imagens/Layer_3.svg);
     background-repeat: no-repeat;
-    background-size: 1.5vw;
+    background-size: contain;
+}
+
+        /* estilizando a MAIN */
+
+.mainTop{
+    background-image: url(./imagens/cabeludo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+}
+
+.mainTop h1{
+    position: absolute;
+    top: 23.5vw;
+    right: 63.5vw;
+    color: #ffffff;
+    width: 20vw;
+    font-size: 4.6vw;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+}
+
+.mainTop h2{
+    position: absolute;
+    top:28vw;
+    right: 17vw;
+    color: #ffffff;
+    width: 23vw;
+    font-size: 2vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }

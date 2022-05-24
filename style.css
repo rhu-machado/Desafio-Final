@@ -36,6 +36,13 @@ header{
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
 }
+li{
+    border: solid;
+}
+.navTop li:hover{
+    text-align: center;
+    font-weight: 800;
+}
 
 .redes{
     display:flex;
@@ -54,10 +61,10 @@ input{
     height: 3.8vh;
     border:solid #9767A9 3px;
     border-radius: 20px;
-    padding: 0px 0 0 10px;
 }
 
 input::placeholder{
+    text-align: center;
     font-size: 1vw;
     color: #9767A9;
     background-image: url(./imagens/Layer_3.svg);

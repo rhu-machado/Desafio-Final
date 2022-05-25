@@ -17,31 +17,44 @@ header{
     color: #9767A9;
 }
 
-.cachos{
+.top{
     width:6vw;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
+.barra{
+    display: none;
+}
+
 .cachos img{
-    width:11vh;
+    width:6.5vw;
 }
 
 .navTop ul{
     display: flex;
     justify-content: space-between;
-    width: 46vw;
+    align-items: center;
+    width: 60vw;
     list-style: none;
     font-size: 1.2vw;
-    font-weight: 300;
+    font-weight: 400;
     font-family: 'Montserrat', sans-serif;
 }
+
 li{
-    border: solid;
-}
-.navTop li:hover{
     text-align: center;
+    width:9vw;
+}
+
+.cc{
+    width: 14vw;
+}
+
+.navTop li:hover{
     font-weight: 800;
+    cursor: pointer;
 }
 
 .redes{
@@ -59,8 +72,9 @@ li{
 input{
     width: 10vw;
     height: 3.8vh;
-    border:solid #9767A9 3px;
+    border:solid #9767A9 2px;
     border-radius: 20px;
+    padding-left: 2px;
 }
 
 input::placeholder{
@@ -72,7 +86,63 @@ input::placeholder{
     background-size: contain;
 }
 
-        /* estilizando a MAIN */
+        /*---Responsividade da HEADER---*/
+
+@media (max-width:600px){
+    header{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 600px;
+        width:100%;
+        margin: auto;
+        height: 6vh;
+        color: #9767A9;
+        
+    }
+    
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 55vw;
+    }
+
+    .barra{
+        display: flex;
+        justify-content: flex-start;
+        height:6vh;
+    }
+    
+    .cachos img{
+        width:12vw;
+    }
+    
+    .navTop ul{
+        display: none;
+    }
+    
+    li{
+        display: none;
+    }
+    
+    .redes{
+        display:none;
+    }
+    
+    .redes img{
+        display: none;
+    }
+    
+    input{
+        display: none;
+    }
+    
+
+
+}
+
+        /*---estilizando a MAIN---*/
 
 .mainTop{
     background-image: url(./imagens/cabeludo.png);

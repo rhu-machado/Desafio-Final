@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&family=Playfair+Display:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;800&family=Playfair+Display:wght@900&display=swap');
 
 *{
     margin: 0;
@@ -14,17 +14,20 @@ header{
     width:100%;
     margin: auto;
     height: 12vh;
+    position:fixed;
+    top: 0;
+    background-color: #ffffff;
     color: #9767A9;
 }
 
-.top{
+.topIcon{
     width:6vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.barra{
+.icon_menu{
     display: none;
 }
 
@@ -101,14 +104,14 @@ input::placeholder{
         
     }
     
-    .top{
+    .topIcon{
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 55vw;
     }
 
-    .barra{
+    .icon_menu{
         display: flex;
         justify-content: flex-start;
         height:6vh;
@@ -142,17 +145,18 @@ input::placeholder{
 
 }
 
-        /*---estilizando a MAIN---*/
+        /*---estilizando o topo da MAIN---*/
 
-.mainTop{
+.mainTitle{
     background-image: url(./imagens/cabeludo.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 90vh;
+    height: 89.9vh;
+    margin-top: 12vh;
 }
 
-.mainTop h1{
+.mainTitle h1{
     position: absolute;
     top: 23.5vw;
     right: 63.5vw;
@@ -163,7 +167,7 @@ input::placeholder{
     font-family: 'Playfair Display', serif;
 }
 
-.mainTop h2{
+.mainTitle h2{
     position: absolute;
     top:28vw;
     right: 17vw;
@@ -172,4 +176,37 @@ input::placeholder{
     font-size: 2vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+}
+
+        /*estilizando as dicas da MAIN*/
+
+.dicasTitle{
+    position: relative;
+    background-color: #9767A9;
+    height: 48vh;
+    color: #ffffff;
+}
+
+.dicasTitle h2{
+    position: absolute;
+    top: 2vh;
+    right: 43vw;
+    width: 47vw;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.3vw;
+}
+
+.dicasTitle p{
+    position: absolute;
+    top: 4vh;
+    right: 5.5vw;
+    font-size: 1.4vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    width: 36.5vw;
+    height: 37vh;
+}
+
+.dicas{
+    height: 70vh;
 }

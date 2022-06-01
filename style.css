@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;800&family=Playfair+Display:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;800&family=Playfair+Display:wght@800;900&display=swap');
 
 *{
     margin: 0;
@@ -22,7 +23,7 @@ header{
 }
 
 .topIcon{
-    width:6vw;
+    width:7vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,7 +91,11 @@ input::placeholder{
     background-size: contain;
 }
 
+
+
         /*---Responsividade da HEADER---*/
+
+
 
 @media (max-width:600px){
     header{
@@ -100,8 +105,7 @@ input::placeholder{
         max-width: 600px;
         width:100%;
         margin: auto;
-        height: 6.5vh;
-        border:solid;
+        height: 6vh;
         color: #9767A9;
     }
     
@@ -110,6 +114,7 @@ input::placeholder{
         justify-content: space-between;
         align-items: center;
         width: 55vw;
+        height: 6.4vh;
     }
 
     .icon_menu{
@@ -142,21 +147,22 @@ input::placeholder{
         display: none;
     }
     
-
-
 }
+
+
 
         /*---estilizando o topo da MAIN---*/
 
+
+
 .mainTitle{
     background-image: url(./imagens/cabeludo@2x.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-position: center;
     width: 100%;
     height: 89.9vh;
     margin-top: 12vh;
-    border: solid;
 }
 
 .mainTitle h1{
@@ -181,48 +187,57 @@ input::placeholder{
     font-weight: 300;
 }
 
+
+
         /*tornando respansivo o topo da MAIN*/
+
+
 
 @media(max-width:600px){
     .mainTitle{
-        background-image: url(./imagens/cabeludo@2x.png);
+        background-image: url(./imagens/cabeludo@2x\(mobile\).png);
         background-size: cover;
         background-repeat: no-repeat;
-        width: 120%;
+        background-position:center;
+        width: 100%;
         height: 70vh;
         margin-top: 5vh;
-        margin-left: -30vw;
     }
     
     .mainTitle h1{
         position: absolute;
-        top: 15vw;
-        right: 30vw;
+        top: 12vw;
+        right: 40vw;
         color: #ffffff;
         width: 50vw;
-        font-size: 9vw;
+        font-size: 13vw;
         font-weight: 900;
         font-family: 'Playfair Display', serif;
     }
     
     .mainTitle h2{
         position: absolute;
-        top:28vw;
-        right: 17vw;
+        top:52vw;
+        right: 36vw;
         color: #ffffff;
         width: 23vw;
-        font-size: 2vw;
+        font-size: 5vw;
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
+        width: 55vw;
     }
 }
 
+
+
         /*estilizando as dicas da MAIN*/
+
+
 
 .dicasTitle{
     position: relative;
     background-color: #9767A9;
-    height: 48vh;
+    height: 35vh;
     color: #ffffff;
 }
 
@@ -246,11 +261,54 @@ input::placeholder{
     height: 37vh;
 }
 
+
+
+        /*tornando responsivo as dicas da MAIN*/
+
+
+
+@media (max-width:600px){
+    .dicasTitle{
+        position: relative;
+        background-color: #9767A9;
+        height: 80vh;
+        color: #ffffff;
+        border: solid rgb(1, 41, 41);
+    }
+    
+    .dicasTitle h2{
+        position: absolute;
+        top: 2vh;
+        right: 14vw;
+        width: 72vw;
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 5vw;
+    }
+    
+    .dicasTitle p{
+        position: absolute;
+        top: 15vh;
+        right: 14vw;
+        font-size: 3vw;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        line-height: 25px;
+        width: 72vw;
+        height: 60vh;
+        border: solid black;
+    }
+}
+
+
+
         /*imagens da MAIN*/
+
+
+
 
 .dicas{
     position: relative;
-    height: 70vh;
+    height: 80vh;
 }
 
 .espelho img{
@@ -264,11 +322,11 @@ input::placeholder{
 .textEspelho{
     color: #ffffff;
     background-color: #9767A9;
-    width: 28vw;
-    height: 58vh;
     position: absolute;
     top: 20vw;
     right: 56vw;
+    width: 28vw;
+    height: 58vh;
     z-index: 2;
     padding: 1.5vw;
 }
@@ -279,4 +337,116 @@ input::placeholder{
     right: 5vw;
     width: 42vw;
     height: 70vh;
+}
+
+.textReferencia{
+    color: #ffffff;
+    background-color: #9767A9;
+    width: 28vw;
+    height: 58vh;
+    position: absolute;
+    top: 80vh;
+    right: 10vw;
+    z-index: 2;
+    padding: 1.5vw;
+}
+
+.praia img{
+    position: absolute;
+    top: 100vh;
+    right: 49vw;
+    width: 42vw;
+    height: 70vh;
+}
+
+.textPraia{
+    color: #ffffff;
+    background-color: #9767A9;
+    width: 28vw;
+    height: 58vh;
+    position: absolute;
+    top: 150vh;
+    right: 56vw;
+    z-index: 2;
+    padding: 1.5vw;
+}
+
+.rainha img{
+    position:absolute;
+    top: 140vh;
+    right: 5vw;
+    width: 42vw;
+    height: 70vh;
+}
+
+.textRainha{
+    color: #ffffff;
+    background-color: #9767A9;
+    width: 28vw;
+    height: 58vh;
+    position: absolute;
+    top: 190vh;
+    right: 10vw;
+    z-index: 2;
+    padding: 1.5vw;
+}
+
+.raizes img{
+    position: absolute;
+    top: 210vh;
+    right: 49vw;
+    width: 42vw;
+    height: 70vh;
+}
+
+.textRaizes{
+    color: #ffffff;
+    background-color: #9767A9;
+    position: absolute;
+    top: 260vh;
+    right: 56vw;
+    width: 28vw;
+    height: 58vh;
+    z-index: 2;
+    padding: 1.5vw;
+}
+
+.fases img{
+    position:absolute;
+    top: 250vh;
+    right: 5vw;
+    width: 42vw;
+    height: 70vh;
+}
+
+.textFases{
+    color: #ffffff;
+    background-color: #9767A9;
+    width: 28vw;
+    height: 58vh;
+    position: absolute;
+    top: 300vh;
+    right: 10vw;
+    z-index: 2;
+    padding: 1.5vw;
+}
+
+.orgulho img{
+    position: absolute;
+    top: 320vh;
+    right: 49vw;
+    width: 42vw;
+    height: 70vh;
+}
+
+.textOrgulho{
+    color: #ffffff;
+    background-color: #9767A9;
+    position: absolute;
+    top: 370vh;
+    right: 56vw;
+    width: 28vw;
+    height: 58vh;
+    z-index: 2;
+    padding: 1.5vw;
 }

@@ -160,7 +160,11 @@ input::placeholder{
 
         /*---estilizando o topo da MAIN---*/
 
-
+main{
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+}
 
 .mainTitle{
     background-image: url(./imagens/cabeludo@2x.png);
@@ -551,3 +555,56 @@ input::placeholder{
 .barbudo img{
     width: 145px;
 }
+
+
+        /*responsivo do final da MAIN*/
+
+
+@media(max-width:600px){
+    
+}
+
+
+        /*FOOTER*/
+
+footer{
+    background-color: #9767A9;
+    height: 14vh;
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 10px;
+    margin-top: 4vh;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+}
+
+footer img{
+    padding: 1px;
+    width:2.5vw;
+}
+
+.seta p{
+    width: 3.5vw;
+}
+
+.link{
+    width: 51%;
+}
+
+.seta figure{
+    display: flex;
+    justify-content: center;
+    width: 10vw;
+}
+
+.seta{
+    display: flex;
+    width: 28%;
+}
+
+

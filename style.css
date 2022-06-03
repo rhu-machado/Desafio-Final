@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 header{
@@ -330,17 +329,19 @@ main{
 .dicas{
     display: flex;
     flex-wrap: wrap;
-    /* overflow: hidden; */
     height: 2100px;
-    border: solid 1px;
+}
+
+.espelho{
+    width: 30%;
 }
 
 .espelho img{
     position: relative;
     bottom: 10%;
     left: 20%;
-    width: 41vw;
-    height: 70vh;
+    width: 100%;
+   
 }
 
 .textEspelho{
@@ -507,53 +508,95 @@ main{
     display: flex;
     justify-content: center;
 }
+
 .grade{
-    width: 910px;
-    height: 490px;
+    width: 84%;
+    height: 96vh;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.rei{
+    width:24.2%;
 }
 
 .rei img{
-    width:220px;
+    width:100%;
+}
+
+ .gloria{
+    width:24.2%;
 }
 
 .gloria img{
-    width: 220px;
+    width:100%;
+}
+
+.beyonce{
+    width: 16%;
 }
 
 .beyonce img{
-    width: 146px;
+    width: 100%;
+}
+
+.jordan{
+    width: 16%;
 }
 
 .jordan img{
-    width: 145px;
+    width: 100%;
+}
+
+.tais {
+    width: 16%;
 }
 
 .tais img{
-    width: 145px;
+    width: 100%;
+}
+
+.black{
+    width: 15.8%;
 }
 
 .black img{
-    width: 144px;
+    width: 100%;
+}
+
+.dog {
+    width: 15.8%;
 }
 
 .dog img{
-    width: 145px;
+    width: 100%;
+}
+
+.cabeludo{
+    width: 24%;
 }
 
 .cabeludo img{
-    width: 220px;
+    width: 100%;
+}
+
+.noiva {
+    width: 15.9%;
 }
 
 .noiva img{
-    width: 145px;
+    width: 100%;
 }
+
+.barbudo{
+    width: 15.9%;
+}
+
 .barbudo img{
-    width: 145px;
+    width: 100%;
 }
 
 

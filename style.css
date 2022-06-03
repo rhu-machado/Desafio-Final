@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 header{
@@ -20,6 +21,10 @@ header{
     z-index: 10;
     background-color: #ffffff;
     color: #9767A9;
+}
+
+.redes figure{
+    padding-top: 2px;
 }
 
 .topIcon{
@@ -74,7 +79,7 @@ li{
     width: 2vw;
 }
 
-input{
+.redes input{
     width: 10vw;
     height: 3.8vh;
     border:solid #9767A9 2px;
@@ -105,7 +110,7 @@ input::placeholder{
         max-width: 600px;
         width:100%;
         margin: auto;
-        height: 6vh;
+        height: 6.5vh;
         color: #9767A9;
     }
     
@@ -120,11 +125,13 @@ input::placeholder{
     .icon_menu{
         display: flex;
         justify-content: flex-start;
-        height:6vh;
+        height:6.5vh;
     }
     
     .cachos img{
-        width:12vw;
+        display: flex;
+        align-items: center;
+        width:50px;
     }
     
     .navTop ul{
@@ -302,23 +309,26 @@ input::placeholder{
         /*imagens da MAIN*/
 
 
+
 .dicas h3{
     font-family: 'Playfair Display', sans-serif;
+    font-size: 25px;
     font-weight: 900;
 }
 
 .dicas p{
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
-    font-size: 1.1vw;
-    margin-top: 15px;
+    font-size: 11px;
+    margin-top: 10px;
 }
 
 .dicas{
     display: flex;
     flex-wrap: wrap;
+    /* overflow: hidden; */
     height: 2100px;
-    border: solid black;
+    border: solid 1px;
 }
 
 .espelho img{
@@ -338,7 +348,7 @@ input::placeholder{
     width: 30vw;
     height: 53vh;
     z-index: 2;
-    padding: 1.5vw;
+    padding: 1vw 1.5vw;
 }
 
 .referencia img{
@@ -353,12 +363,12 @@ input::placeholder{
     color: #ffffff;
     background-color: #9767A9;
     width: 30vw;
-    height: 48vh;
+    height: 44vh;
     position: relative;
     top: 1.5%;
     right: -15%;
     z-index: 2;
-    padding: 1.5vw;
+    padding: 1vw 1.5vw;
 }
 
 .praia img{
@@ -372,13 +382,13 @@ input::placeholder{
 .textPraia{
     color: #ffffff;
     background-color: #9767A9;
-    width: 30vw;
+    width: 28vw;
     height: 35vh;
     position: relative;
     top: 1%;
     right: 28%;
     z-index: 2;
-    padding: 1.5vw;
+    padding: 1vw 1.5vw;
 }
 
 .rainha img{
@@ -393,17 +403,17 @@ input::placeholder{
     color: #ffffff;
     background-color: #9767A9;
     width: 30vw;
-    height: 38vh;
+    height: 40vh;
     position: relative;
     top: -3.7%;
     right: -15%;
     z-index: 2;
-    padding: 1.5vw;
+    padding: 1vw 1.5vw;
 }
 
 .raizes img{
     position: relative;
-    bottom: 120%;
+    bottom: 115%;
     left: 20%;
     width: 41vw;
     height: 70vh;
@@ -416,14 +426,14 @@ input::placeholder{
     top: -7.5%;
     right: 28%;
     width: 30vw;
-    height: 48vh;
+    height: 46vh;
     z-index: 2;
-    padding: 1.5vw;
+    padding: 1vw 1.5vw;
 }
 
 .fases img{
     position:relative;
-    bottom: 165%;
+    bottom: 160%;
     left: 122%;
     width: 41vw;
     height: 70vh;
@@ -438,7 +448,7 @@ input::placeholder{
     top: -12%;
     right: -15%;
     z-index: 2;
-    padding: 1.5vw;
+    padding: 1vw 1.5vw;
 }
 
 .orgulho img{
@@ -456,24 +466,88 @@ input::placeholder{
     top: -14.6%;
     right: 28%;
     width: 30vw;
-    height: 40vh;
+    height: 38vh;
     z-index: 2;
-    padding: 1.5vw;
+    padding: 1vw 1.5vw;
 }
 
-.textura img{
+.textura{
     position: relative;
-    bottom: 1400%; 
-    left: 205%;
+    bottom: 9%; 
+    left: 56%;
     width:28vw;
+    
+}
+.textura img{
+    width: 28vw;
 }
 
+.dicas figure{
+    height: 15vh;
+}
 
-
-/*rersponsivo das imagens da MAIN*/
+        /*rersponsivo das imagens da MAIN*/
 
 
 
 @media(max-width:600px){
     
+}
+
+
+        /*configurando o o fina da MAIN*/
+
+
+
+.final{
+    display: flex;
+    justify-content: center;
+}
+.grade{
+    width: 910px;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.rei img{
+    width:220px;
+}
+
+.gloria img{
+    width: 220px;
+}
+
+.beyonce img{
+    width: 146px;
+}
+
+.jordan img{
+    width: 145px;
+}
+
+.tais img{
+    width: 145px;
+}
+
+.black img{
+    width: 144px;
+}
+
+.dog img{
+    width: 145px;
+}
+
+.cabeludo img{
+    width: 220px;
+}
+
+.noiva img{
+    width: 145px;
+}
+.barbudo img{
+    width: 145px;
 }

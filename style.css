@@ -495,13 +495,14 @@ main{
 
 .textura{
     position: relative;
-    bottom: 9%; 
-    left: 50%;
-    width:28vw;
+    top:4%;
+    right: 14%;
+    width:28%;
     
 }
+
 .textura img{
-    width: 28vw;
+    width: 100%;
 }
 
 .dicas figure{
@@ -528,7 +529,7 @@ main{
 
 .grade{
     width: 84%;
-    height: 96vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;

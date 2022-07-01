@@ -650,7 +650,13 @@ footer img{
 }
 
 .seta p{
-    width: 3.5vw;
+    width: 3.9vw;
+    border: solid 1px olivedrab;
+}
+
+.seta a{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .link{
@@ -668,4 +674,8 @@ footer img{
     width: 28%;
 }
 
+        /*responsivo do footer*/
 
+@media(max-width:600){
+
+}
